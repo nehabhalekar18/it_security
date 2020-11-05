@@ -298,10 +298,7 @@
                 </span>
               </p>
 
-              <form
-                name="login"
-                id="login"
-              >
+              <form>
                 <table>
                   <tbody>
                     <tr>
@@ -370,7 +367,6 @@
               function onLogin() {
                 var uid = document.getElementById("uid").value;
                 var pwd = document.getElementById("passw").value;
-                alert(uid + "" + pwd);
                 var xhr = new XMLHttpRequest();
                 xhr.open(
                   "POST",
