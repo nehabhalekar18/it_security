@@ -353,11 +353,12 @@
                     passw: pwd,
                   })
                 );
-                xhr.onload = function () {
-                  var data = JSON.parse(this.responseText);
-                  var url1="https://demo.testfire.net/bank/main.jsp?uid='"+uid+"'&passw='"+pwd+"'";
+                xhr.onload = function() {
+      var data = JSON.parse(this.responseText);
+        var url1="https://demo.testfire.net/bank/main.jsp?uid='"+uid+"'&passw='"+pwd+"'";
         window.location.href=url1;
-                };
+     //window.location.href="https://demo.testfire.net/bank/main.jsp?uid='admin'&passw='admin'";
+    }
               }
             </script>
           </td>
