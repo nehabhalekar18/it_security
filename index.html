@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
     <title>Altoro Mutual</title>
 
-    <link href="./index1_files/style.css" rel="stylesheet" type="text/css" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
   </head>
   <body style="margin-top: 5px">
     <div id="header" style="margin-bottom: 5px; width: 99%">
@@ -51,7 +51,7 @@
                 "
               >
                 <img
-                  src="./index1_files/header_pic.jpg"
+                  src="./header_pic.jpg"
                   alt=""
                   width="354"
                   height="60/"
@@ -73,7 +73,7 @@
             <div id="Header1">
               <img
                 id="Image1"
-                src="./index1_files/pf_lock.gif"
+                src="./pf_lock.gif"
                 width="12"
                 height="14"
                 style="vertical-align: bottom"
@@ -299,7 +299,6 @@
               </p>
 
               <form
-                method="post"
                 name="login"
                 id="login"
               >
@@ -369,8 +368,8 @@
                 }
               }
               function onLogin() {
-                var uid = document.getElementById("uid").val();
-                var pwd = document.getElementById("passw").val();
+                var uid = document.getElementById("uid").value;
+                var pwd = document.getElementById("passw").value;
                 alert(uid + "" + pwd);
                 var xhr = new XMLHttpRequest();
                 xhr.open(
